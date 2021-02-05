@@ -11,6 +11,7 @@
 	<script src="js/ofi.min.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/modaal.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
@@ -71,48 +72,60 @@
 				</div>
 			</div>
 		</section>
+		<section class="kv">
+			<div class="kv-image">
+				<img src="img/dog.jpg" alt="dog" class="object-fit-img">
+			</div>
+		</section>
 		<article>
+			<section class="about">
+				<div class="about-area">
+					<div class="about-title" data-aos="zoom-in">
+						<h2>About</h2>
+					</div>
+					<div class="about-text">
+						<p class="typ">あなたの理想、描いたものを実現させます。</p>
+						<p class="typ">思い描いたものを、形にするお手伝いをさせて頂きます。</p>
+						<p class="typ">誰もが持っている自分らしさ、個性をWebサイトという形に。</p>
+					</div>
+				</div>
+			</section>
 			<section class="PROFILE">
 				<div class="profile-area">
-					<div class="profile-image">
-						<img src="img/dog.jpg" alt="dog" class="object-fit-img">
-					</div>
-					<div id="profile"  class="profile-title">
+					<div id="profile"  class="profile-title" data-aos="fade-up">
 						<h2>PROFILE</h2>
 					</div>
-					<div class="profile-text">
+					<div class="profile-text" data-aos="fade-up">
 						<ul>
 							<li>ルシアン。</li>
 							<li>愛知在住の21歳。</li>
 							<li>ノマドエンジニアに憧れ、プログラミング学習を始める。</li>
 							<li>高校を卒業したあと工場に就職。</li>
-							<li>仕事をしながら平日は3時間、休日は8時間ほど勉強している。</li>
-							<li>現在webデザインやコーディング、Wordpressをメインに勉強中。</li>
 							<li></li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section id="skill">
+			<section id="skill" data-aos="fade-up">
 				<div class="skill-area">
 					<div class="skill-title">
 						<h2>SKILL</h2>
 					</div>
 					<div class="skill-text">
 						<ul>
-							<li>
+							<li data-aos="fade-up-right">
 								<i class="fab fa-html5 skill-icon"></i>
 								<p>HTML</p>
 							</li>
-							<li>
+							<li data-aos="fade-up-right">
 								<i class="fab fa-css3-alt skill-icon"></i>
 								<p>CSS</p>
 							</li>
-							<li>
+							<li data-aos="fade-up-left">
 								<i class="fab fa-js skill-icon"></i>
 								<p>JavaScript,JQuery</p>
 							</li>
-							<li>
+							<li data-aos="fade-up-left">
 								<i class="fas fa-mobile-alt skill-icon"></i>
 								<p>レスポンシブ対応可</p>
 							</li>
@@ -120,16 +133,16 @@
 					</div>
 				</div>
 			</section>
-			<section id="service">
+			<section id="service" data-aos="fade-up">
 				<div class="service-title">
 					<h2>SERVICE</h2>
 				</div>
 				<div class="service-container">
 					<div class="service">
-						<div class="service-image">
+						<div class="service-image" data-aos="fade-right">
 							<img src="img/code.jpg" alt="coding" class="object-fit-img">
 						</div>
-						<div class="service-text">
+						<div class="service-text" data-aos="fade-left">
 							<h3>コーディング</h3>
 							<p>頂いたデザイン案を再現し、変更をしても崩れないCSS設計を心掛け、コーディングをさせて頂きます。</p>
 							<p>JavaScript,JQueryで、ふわっと表示させることも可能です。ご希望に沿ったアニメーションを実装します。
@@ -138,7 +151,7 @@
 							<p>レスポンシブ対応もできます。</p>
 							<p>WordPressでは簡単な<a href="http://lusian.wp.xdomain.jp/" target="_blank">仮想のカフェサイト</a>を作成しました。
 								<br>
-
+								参考までにご覧下さい。
 							</p>
 							<p>
 								既存サイトのWordpress化もできます。
@@ -146,7 +159,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="service-list-area">
+				<div class="service-list-area" data-aos="zoom-in">
 					<table class="service-list">
             <tbody>
               <tr>
@@ -176,12 +189,12 @@
 				</div>
 			</section>
 			<section id="work">
-				<div class="work">
+				<div class="work" data-aos="fade-up">
 					<div class="work-title">
 						<h2>WORK</h2>
 					</div>
 					<div class="work-container">
-						<div class="work-box">
+						<div class="work-box" data-aos="flip-left">
 							<div class="work-image">
 								<a href="#modal" class="modal">
 									<img src="img/cresta-figma.png" alt="image1" class="object-fit-img">
@@ -195,7 +208,7 @@
 								<img src="img/cresta-figma.png" alt="image1">
 							</div>
 						</div>
-						<div class="work-box">
+						<div class="work-box" data-aos="flip-left" data-aos-delay="600">
 							<div class="work-image">
 								<a href="#modal2" class="modal">
 									<img src="img/cresta-second.jpg" alt="image1" class="object-fit-img">
@@ -208,7 +221,7 @@
 								<img src="img/cresta-second.jpg" alt="image2">
 							</div>
 						</div>
-						<div class="work-box">
+						<div class="work-box" data-aos="flip-left" data-aos-delay="300">
 							<div class="work-image">
 								<a href="#modal3" class="modal">
 									<img src="img/cresta-third.png" alt="image1" class="object-fit-img">
@@ -221,7 +234,7 @@
 								<img src="img/cresta-third.png" alt="image1">
 							</div>
 						</div>
-						<div class="work-box">
+						<div class="work-box" data-aos="flip-left" data-aos-delay="600">
 							<div class="work-image">
 								<a href="#modal4" class="modal">
 									<img src="img/FireShot Capture 005 - cresta - .png" alt="image1" class="object-fit-img">
@@ -238,7 +251,7 @@
 				</div>
 			</section>
 			<section id="contact">
-				<div class="contact-wrapper">
+				<div class="contact-wrapper" data-aos="zoom-in">
 					<div class="contact-title">
 						<h2>CONTACT</h2>
 					</div>
@@ -260,11 +273,18 @@
 	</main>
 	<script>
 		$('.modal').modaal({
-				background_scroll: 'false'
+			background_scroll: 'false'
 		});
 	</script>
 	<script>
 		objectFitImages('img.object-fit-img');
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			delay: 0,
+			duration: 700
+		});
 	</script>
 </body>
 </html>
