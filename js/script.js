@@ -1,6 +1,6 @@
 $(window).on('load',function(){
   // ここから文字を<span></span>で囲む記述
-  $('.typ').children().andSelf().contents().each(function() {
+  $('.typ').children().andBack().contents().each(function() {
   if (this.nodeType == 3) {
   $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
   }
