@@ -8,7 +8,7 @@ $(window).on('load',function(){
   // ここから一文字ずつフェードインさせる記述
   $('.typ').css({'opacity':1});
   for (var i = 0; i <= $('.typ').children().size(); i++) {
-  $('.typ').children('span:eq('+i+')').delay(70*i).animate({'opacity':1},70);
+  $('.typ').children('span:eq('+i+')').delay(50*i).animate({'opacity':1},50);
   };
   });
 
