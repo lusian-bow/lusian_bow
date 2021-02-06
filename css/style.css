@@ -142,11 +142,11 @@ article {
 /* kv */
 
 .kv {
-	width: 80%;
+	width: 100%;
 }
 
 .kv-image {
-	width: 100%;
+	width: 80%;
 	height: 700px;
 }
 
@@ -640,6 +640,22 @@ footer {
 @media screen and (max-width: 768px) {
 	article {
 		width: 100%;
+		overflow: hidden;
+	}
+
+	/* kv */
+
+	.kv-image {
+		width: 100%;
+		height: auto;
+	}
+
+	/* about */
+
+	.about-text {
+		width: 100%;
+		max-width: 500px;
+		font-size: 18px;
 	}
 
 	/*profile*/
@@ -709,8 +725,9 @@ footer {
 
 
 @media screen and (max-width: 426px) {
-	/*profile*/
+	/* kv */
 	.kv-image {
+		width: 100%;
 		height: 300px;
 		margin-top: 20px;
 	}
@@ -723,6 +740,15 @@ footer {
 		object-fit: cover;
 		font-family: 'object-fit: cover;';
 	}
+
+	/* about */
+
+	.about-text {
+		font-size: 16px;
+		line-height: 1.2;
+	}
+
+/* profile */
 
 	.profile-text {
 		max-width: 300px;
