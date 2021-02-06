@@ -710,16 +710,16 @@ footer {
 
 @media screen and (max-width: 426px) {
 	/*profile*/
-	.profile-image {
+	.kv-image {
 		height: 300px;
 		margin-top: 20px;
 	}
 
-	.profile-image img {
+	.kv-image img {
 		min-height: unset;
 	}
 
-	.profile-image .object-fit-img {
+	.kv-image .object-fit-img {
 		object-fit: cover;
 		font-family: 'object-fit: cover;';
 	}
