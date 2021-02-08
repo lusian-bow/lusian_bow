@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>クリ☆スタ THIRD CONTACT</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header-wrapper">
+        <div class="site-title">
+          <a href="index.html">
+            <h1>
+              <img src="images/site-logo.png" alt="site-logo" class="site-logo" >
+            </h1>
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="d-mark">
+              <img src="images/d-mark.png" alt="mark">
+            </li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="index.html#works">WORKS</a></li>
+            <li><a href="index.html#culture">CULTURE</a></li>
+            <li><a href="index.html#topics">TOPICS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="nav-btn">
+          <div class="btn-bar">
+            <span class="btn-t"></span>
+            <span class="btn-m"></span>
+            <span class="btn-b"></span>
+          </div>
+          <div class="nav-menu">
+            <p>MENU</p>
+          </div>
+        </div>
+      </div>
+      <span class="menu-bg"></span>
+    </div>
+  </header>
+  <main>
+    <section class="contact-head">
+      <div class="contact-fv">
+        <div class="contact-container">
+          <h1>CONTACT</h1>
+          <p>お問合せ</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <div class="contact-note">
+        <p>ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。</p>
+      </div>
+      <div class="form-area">
+        <form action="" method="POST">
+          <div class="radio-btn">
+            <p>
+              お問い合わせ種別
+              <span>必須</span>
+            </p>
+            <label for="radio-a">
+              <input type="radio" name="radio" id="radio-a" value="製作依頼"><span class="radio" >制作依頼</span>
+            </label>
+            <label for="radio-b">
+              <input type="radio" name="radio" id="radio-b" value="採用"><span class="radio">採用</span>
+            </label>
+            <label for="radio-c">
+              <input type="radio" name="radio" id="radio-c" value="IR"><span class="radio">IR</span>
+            </label>
+            <label for="radio-d">
+              <input type="radio" name="radio" id="radio-d" value="その他"><span class="radio">その他</span>
+            </label>
+          </div>
+          <div class="company">
+            <label for="company">会社名・団体名</label>
+            <input type="text" name="company" id="company">
+          </div>
+          <div class="name">
+            <label for="name">お名前 <span>必須</span></label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="mail">
+            <label for="mail">メールアドレス<span>必須</span></label>
+            <input type="email" name="mail" id="mail">
+          </div>
+          <div class="tel">
+            <label for="tel">電話番号</label>
+            <input type="text" name="tel" id="tel">
+          </div>
+          <div class="detail">
+            <label for="detail">お問い合わせ内容   <span>必須</span></label>
+            <textarea name="detail" id="detail" cols="30" rows="5"></textarea>
+          </div>
+          <div class="privacy">
+            <h1>PRIVACY POLICY</h1>
+            <div class="privacy-text">
+              <h3>個人情報保護法</h3>
+              <p>株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます</p>
+              <ol>
+                <li>
+                  個人情報の収集、利用
+                  <p>当社では、お客様との取引、サービス提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。</p>
+                </li>
+                <li>
+                  個人情報の第三者への開示と提供
+                  <p>収集したお客様の個人情報は、法的法的な要請等によらない限り、お客様の承諾を得ない第三者に対して</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="check">
+            <label for="check">
+              <input class="check-box" type="checkbox" name="check" id="check">
+              <span class="checkbox">個人情報の取り扱いについて同意のうえ送信します。</span>
+            </label>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" value="送信">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-inner">
+        <p>🄫2018 DIGSMILE INC.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
