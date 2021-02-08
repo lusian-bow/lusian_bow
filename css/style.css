@@ -141,12 +141,13 @@ article {
 
 /* kv */
 
-.kv {
-	width: 100%;
+.kv-wrapper {
+	width: 80%;
+	position: relative;
 }
 
 .kv-image {
-	width: 80%;
+	width: 100%;
 	height: 700px;
 }
 
@@ -160,6 +161,31 @@ article {
 	object-fit: cover;
 	font-family: 'object-fit: cover';
 }
+
+.kv-text {
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	transform: translateY(-40%);
+	margin: 48px auto;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 1.8;
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+	-o-transform: translateY(-40%);
+}
+
+.typ {
+  opacity: 0;
+  }
+.typ span {
+  opacity: 0;
+	font-weight: bold;
+  }
 
 /* about */
 
@@ -186,54 +212,42 @@ article {
 
 .about-text {
 	width: 100%;
+	max-width: 640px;
 	margin: 48px auto;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	line-height: 1.8;
 }
 
-.typ {
-  opacity: 0;
-  }
-.typ span {
-  opacity: 0;
-  }
-
-/*profile*/
-
-.profile-area {
-	width: 100%;
+.about-text ul {
+	text-align-last: left;
 }
 
-.profile-title {
-	text-align: center;
-	padding-top: 64px;
-}
-
-.profile-title h2 {
-	font-size: 32px;
-	font-weight: bold;
-	border-bottom: 2px solid #222;
-	display: inline-block;
-	padding-bottom: 16px;
-}
-
-.profile-text {
-	width: 100%;
-	max-width: 700px;
-	margin: 50px auto;
-}
-
-.profile-text ul {
-	max-width: 480px;
-	width: 100%;
-	margin-top: 24px;
-	margin: auto;
-}
-
-.profile-text ul li {
-	font-size: 16px;
+.about-text ul li {
+  position: relative;
+  padding-left: 25px;
 	margin-top: 16px;
+}
+
+.about-text ul li:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px #4e4e4e;
+}
+
+.about-text ul li:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px #4e4e4e;
 }
 
 /*skill*/
@@ -318,11 +332,6 @@ article {
 	font-size: 24px;
 }
 
-.service-text p {
-	margin-top: 32px;
-	font-size: 16px;
-}
-
 .service {
 	display: flex;
 	margin-top: 48px;
@@ -335,7 +344,7 @@ article {
 .service-image img {
 	width: 100%;
 	max-width: 400px;
-	height: 250px;
+	height: 280px;
 	object-fit: cover;
 }
 
@@ -356,11 +365,11 @@ article {
 
 .service-text p {
 	font-size: 16px;
-	margin-top: 16px;
+	margin-top: 8px;
 }
 
-.service-text p:first-child {
-	margin-top: 24px;
+.service-text h3 + p {
+	margin-top: 32px;
 }
 
 .service-text p	a {
@@ -483,6 +492,67 @@ article {
 	height: 30px;
 	margin: 20px auto;
 	text-align: left;
+}
+
+.work-button {
+	display: inline-block;
+	text-align: center;
+	margin-top: 16px;
+	background-color: #4e4e4e;
+	border: #222 solid 1px;
+	border-radius: 16px;
+	padding: 8px 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	-o-border-radius: 16px;
+}
+
+.work-button a {
+	color: #fff;
+}
+
+.work-button a:hover {
+	opacity: 0.5;
+}
+
+
+/*profile*/
+
+.profile-area {
+	width: 100%;
+	margin-top: 64px;
+}
+
+.profile-title {
+	text-align: center;
+	padding-top: 64px;
+}
+
+.profile-title h2 {
+	font-size: 32px;
+	font-weight: bold;
+	border-bottom: 2px solid #222;
+	display: inline-block;
+	padding-bottom: 16px;
+}
+
+.profile-text {
+	width: 100%;
+	max-width: 700px;
+	margin: 50px auto;
+}
+
+.profile-text ul {
+	max-width: 480px;
+	width: 100%;
+	margin-top: 24px;
+	margin: auto;
+}
+
+.profile-text ul li {
+	font-size: 16px;
+	margin-top: 16px;
 }
 
 
@@ -645,9 +715,17 @@ footer {
 
 	/* kv */
 
+	.kv-wrapper {
+		width: 100%;
+	}
+
 	.kv-image {
 		width: 100%;
 		height: auto;
+	}
+
+	.kv-text {
+		font-size: 20px;
 	}
 
 	/* about */
@@ -726,6 +804,11 @@ footer {
 
 @media screen and (max-width: 426px) {
 	/* kv */
+
+	.kv-wrapper {
+		width: 100%;
+	}
+
 	.kv-image {
 		width: 100%;
 		height: 300px;
@@ -739,6 +822,10 @@ footer {
 	.kv-image .object-fit-img {
 		object-fit: cover;
 		font-family: 'object-fit: cover;';
+	}
+
+	.kv-text {
+		font-size: 16px;
 	}
 
 	/* about */
@@ -827,6 +914,16 @@ footer {
 	.work-text p {
 		font-size: 14px;
 	}
+
+	
+	.work-button {
+		padding: 4px 8px;
+	}
+
+	.work-button a{
+		font-size: 12px;
+	}
+
 
 	/*contact*/ 
 
