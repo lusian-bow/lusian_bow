@@ -36,10 +36,10 @@
 				<nav class="main-nav">
 					<ul class="main-menu">
 						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#profile">PROFILE</a></li>
 						<li><a href="#skill">SKILL</a></li>
 						<li><a href="#service">SERVICE</a></li>
 						<li><a href="#work">WORK</a></li>
+						<li><a href="#profile">PROFILE</a></li>
 						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 					<ul class="sns">
@@ -61,10 +61,10 @@
 					<nav class="main-nav">
 						<ul class="main-menu">
 							<li><a href="#about">ABOUT</a></li>
-							<li><a href="#profile">PROFILE</a></li>
 							<li><a href="#skill">SKILL</a></li>
 							<li><a href="#service">SERVICE</a></li>
 							<li><a href="#work">WORK</a></li>
+							<li><a href="#profile">PROFILE</a></li>
 							<li><a href="#contact">CONTACT</a></li>
 						</ul>
 						<ul class="sns">
@@ -75,35 +75,30 @@
 			</div>
 		</section>
 		<section class="kv">
-			<div class="kv-image">
-				<img src="img/dog.jpg" alt="dog" class="object-fit-img">
+			<div class="kv-wrapper">
+				<div class="kv-image">
+					<img src="img/dog.jpg" alt="dog" class="object-fit-img">
+				</div>
+				<div class="kv-text">
+					<p class="typ">あなたの理想、描いたものを実現させます。</p>
+					<p class="typ">思い描いたものを、形にするお手伝いをさせて頂きます。</p>
+					<p class="typ">誰もが持っている自分らしさ、個性をWebサイトという形に。</p>
+				</div>
 			</div>
 		</section>
 		<article>
 			<section id="about" class="about">
-				<div class="about-area">
+				<div class="about-area" data-aos="fade-up">
 					<div class="about-title">
 						<h2>ABOUT</h2>
 					</div>
 					<div class="about-text">
-						<p class="typ">あなたの理想、描いたものを実現させます。</p>
-						<p class="typ">思い描いたものを、形にするお手伝いをさせて頂きます。</p>
-						<p class="typ">誰もが持っている自分らしさ、個性をWebサイトという形に。</p>
-					</div>
-				</div>
-			</section>
-			<section class="PROFILE">
-				<div class="profile-area">
-					<div id="profile"  class="profile-title" data-aos="fade-up">
-						<h2>PROFILE</h2>
-					</div>
-					<div class="profile-text" data-aos="fade-up">
 						<ul>
-							<li>ルシアン。</li>
-							<li>愛知在住の21歳。</li>
-							<li>ノマドエンジニアに憧れ、プログラミング学習を始める。</li>
-							<li>高校を卒業したあと工場に就職。</li>
-							<li></li>
+							<li>ヒアリングからお客様が思い描いたHPを作成します</li>
+							<li>既存HPの修正・変更にも対応します</li>
+							<li>Wordpress化にも対応します</li>
+							<li>レスポンシブ対応も可能です</li>
+							<li>ふわっと表示させるなど、理想のアニメーションを実装します</li>
 						</ul>
 					</div>
 				</div>
@@ -149,14 +144,12 @@
 							<p>頂いたデザイン案を再現し、変更をしても崩れないCSS設計を心掛け、コーディングをさせて頂きます。</p>
 							<p>JavaScript,JQueryで、ふわっと表示させることも可能です。ご希望に沿ったアニメーションを実装します。
 							</p>
-							<p>変更、修正等ありましたら、直ぐに対応します。</p>
+							<p>変更、修正等ありましたら、直ぐに対応します。<br>軽微な修正であれば三回まで無料で行います。</p>
 							<p>レスポンシブ対応もできます。</p>
+							<p>Wordpressでの制作にも対応可能です。</p>
 							<p>WordPressでは簡単な<a href="http://lusian.wp.xdomain.jp/" target="_blank">仮想のカフェサイト</a>を作成しました。
 								<br>
 								参考までにご覧下さい。
-							</p>
-							<p>
-								既存サイトのWordpress化もできます。
 							</p>
 						</div>
 					</div>
@@ -203,24 +196,14 @@
 								</a>
 							</div>
 							<div class="work-text">
-								<p>デザインカンプをコーディングしました。複数の画像が横に流れるスライドショーを実装しています。
+								<p>デザインカンプをコーディングしました。複数の画像が横に流れるスライドショーを実装しています。一番上に戻るための矢印ボタンでスムーズに移動できるようにしました。
 								</p>
+							</div>
+							<div class="work-button">
+								<a href="./cresta.figma/index.html" target="blank">サイトを表示する</a>
 							</div>
 							<div id="modal" style="display: none;">
 								<img src="img/cresta-figma.png" alt="image1">
-							</div>
-						</div>
-						<div class="work-box" data-aos="flip-left" data-aos-delay="200">
-							<div class="work-image">
-								<a href="#modal2" class="modal">
-									<img src="img/cresta-second.jpg" alt="image1" class="object-fit-img">
-								</a>
-							</div>
-							<div class="work-text">
-								<p>デザインカンプをコーディングしました。メインのトップ画面はスライドショーで動くように製作しています。</p>
-							</div>
-							<div id="modal2" style="display: none;">
-								<img src="img/cresta-second.jpg" alt="image2">
 							</div>
 						</div>
 						<div class="work-box" data-aos="flip-left" data-aos-delay="200">
@@ -232,23 +215,28 @@
 							<div class="work-text">
 								<p>デザインカンプをコーディングしました。右側からシュッと出てくるハンバーガーメニューを実装しています。</p>
 							</div>
+							<div class="work-button">
+								<a href="./cresta.third/index.html" target="blank">サイトを表示する</a>
+							</div>
 							<div id="modal3" style="display: none;">
 								<img src="img/cresta-third.png" alt="image1">
 							</div>
 						</div>
-						<div class="work-box" data-aos="flip-left" data-aos-delay="500">
-							<div class="work-image">
-								<a href="#modal4" class="modal">
-									<img src="img/FireShot Capture 005 - cresta - .png" alt="image1" class="object-fit-img">
-								</a>
-							</div>
-							<div class="work-text">
-								<p>デザインカンプをコーディングしました。メニューを開いたときに画面全体を覆うハンバーガーメニューを実装しました。kvにはタイピング風アニメーションも実装しています。</p>
-							</div>
-							<div id="modal4" style="display: none;">
-								<img src="img/FireShot Capture 005 - cresta - .png" alt="image1">
-							</div>
-						</div>
+					</div>
+				</div>
+			</section>
+			<section class="PROFILE">
+				<div class="profile-area">
+					<div id="profile"  class="profile-title" data-aos="fade-up">
+						<h2>PROFILE</h2>
+					</div>
+					<div class="profile-text" data-aos="fade-up">
+						<ul>
+							<li>ルシアン。</li>
+							<li>愛知在住の22歳。</li>
+							<li>ノマドエンジニアに憧れ、プログラミング学習を始める。</li>
+							<li>高校を卒業したあと工場に就職し、正社員として働いています。</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -260,6 +248,7 @@
 					<div class="contact-text">
 						<p>現在準備中です。申し訳ありませんが<a href="https://twitter.com/dogbow_wow09" target="_blank">Twitter</a>からお問い合わせください。</p>
 						<p>成果物、実績等は、ただいま掲載許可の確認中のものもあるため、TwitterのDMにて、<br>実績等のご質問のお答え、ご対応させていただきます。</p>
+						<p>日程にもよりますが、平日の午前中などにオンラインMTGの対応も可能です。<br>お気軽にご相談ください。</p>
 					</div>
 					<div class="contact-button">
 						<a href="https://twitter.com/dogbow_wow09">Twitterお問い合わせ</a>
