@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>クリスタ練習</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/js/swiper.min.js"></script>
+  <script src="../js/ofi.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/css/swiper.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header-wrapper">
+        <div class="site-title">
+          <h1>
+            <img src="./images/logo-type.svg" alt="logo">
+          </h1>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li><a href="#about">about</a></li>
+          <li><a href="#style">style</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#reserve">reserve</a></li>
+          <li><a href="#access">access</a></li>
+        </ul>
+      </nav>
+      <div class="nav-btn">
+        <div class="btn-bar">
+          <span class="btn-t"></span>
+          <span class="btn-m"></span>
+          <span class="btn-b"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="sticky">
+    <section class="main-head">
+      <div class="fv">
+        <div class="fv-image">
+          <img src="images/photo-1580618672591-eb180b1a973f.jpg" alt="fv-image" class="object-fit-img">
+        </div>
+      </div>
+      <div class="floating">
+        <a href="#">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+    </section>
+    <article>
+      <section id="about">
+        <div class="about-area">
+          <div class="about-wrapper">
+            <div class="about-title">
+              <h1>About</h1>
+            </div>
+            <div class="about-text">
+              <h2>Salon de beauteについて</h2>
+              <p>Salon de beauteは東京の下町にある美容室です。
+                夫婦で営んでおり、地元のお客様に寄り添ったお店でありたいと思っています。
+                お客様と生涯に渡ってお付き合いができる。そんな存在を目指して日々お客様と接しています。</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="concept">
+        <div class="concept-area">
+          <div class="concept-image">
+            <img src="images/bg_scroll02.jpg" alt="concept">
+          </div>
+          <div class="concept-wrapper">
+            <div class="concept-title">
+              <h1>concept</h1>
+            </div>
+            <div class="concept-text">
+              <h2>あなたのためのサロン</h2>
+              <ul>
+                <li>1.カウンセリングから仕上げまで担当者が変わりません</li>
+                <li>2.お一人お一人の髪質や頭皮にあったトリートメント・薬剤を処方します。</li>
+                <li>3.プライベートサロンのため、お子様連れでもご来店いただけます。</li>
+                <li>4.お時間やお日にちの都合が合わない場合、できる限り個別に対応させていただきます。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="staff">
+        <div class="staff-area">
+          <div class="staff-title">
+            <h1>staff</h1>
+          </div>
+          <div class="staff-wrapper">
+            <div class="staff-image">
+              <img src="images/photo-1582582450303-48cc2cfa2c43.jpg" alt="staff">
+            </div>
+            <div class="staff-info">
+              <table>
+                <tr>
+                  <th>名前</th>
+                  <td>石井真紀</td>
+                </tr>
+                <tr>
+                  <th>生年月日</th>
+                  <td>1989年11月22日</td>
+                </tr>
+                <tr>
+                  <th>出身地</th>
+                  <td>東京都葛飾区</td>
+                </tr>
+                <tr>
+                  <th>血液型</th>
+                  <td>B型</td>
+                </tr>
+                <tr>
+                  <th>趣味</th>
+                  <td>NBA観戦</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="staff-note">
+            <p>愛着のある地元で美容室ができることを大変嬉しく思っております。
+              お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、日々精進して参りますので、よろしくお願いします！</p>
+          </div>
+        </div>
+      </section>
+  </article>
+  <div class="bg-1"></div>
+  <article>
+    <section id="style">
+      <div  class="style-area">
+        <div class="style-title">
+          <h1>style</h1>
+        </div>
+        <div class="style-image">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/style.min/style01-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style02-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style03-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style04-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style05-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style06-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style07-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style08-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style09-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style10-min.jpg"></div>
+              <div class="swiper-slide"><img src="./images/style.min/style11-min.jpg"></div>
+            </div>
+              
+            <div class="swiper-button-prev swiper-button-black"></div>
+            <div class="swiper-button-next swiper-button-black"></div>
+        
+            <div class="swiper-pagination swiper-pagination-black"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <div class="bg-2"></div>
+  <article>
+    <section id="menu">
+      <div class="menu-area">
+        <div class="menu-title">
+          <h1>menu</h1>
+        </div>
+        <div class="menu-wrapper">
+          <div class="cut box">
+            <h3>
+              <span>
+                <img  class="icon" src="./images/icon_menu/icon_cut.svg" alt="cut">
+              </span>
+              cut
+            </h3>
+            <table>
+              <tr>
+                <th>カット＆シャンプー</th>
+                <td>: ¥4,100</td>
+              </tr>
+            </table>
+          </div>
+          <div class="color box">
+            <h3>
+              <span>
+                <img  class="icon" src="./images/icon_menu/icon_color.svg" alt="color">
+              </span>
+              color
+            </h3>
+            <table>
+              <tr>
+                <th>高濃度フルボ酸リタッチカラー</th>
+                <td>: ¥8,500</td>
+              </tr>
+              <tr>
+                <th>高濃度フルボ酸ワンメイクカラー</th>
+                <td>: ¥9,500</td>
+              </tr>
+              <tr>
+                <th>高濃度フルボ酸Wカラー</th>
+                <td>: ¥15,000</td>
+              </tr>
+            </table>
+          </div>
+          <div class="perm box">
+            <h3>
+              <span>
+                <img  class="icon" src="./images/icon_menu/icon_perm.svg" alt="perm">
+              </span>
+              perm
+            </h3>
+            <table>
+              <tr>
+                <th>高濃度フルボ酸スピデジパーマ</th>
+                <td>: ¥14,000</td>
+              </tr>
+              <tr>
+                <th>メンズデザインパーマ</th>
+                <td>: ¥9,800</td>
+              </tr>
+              <tr>
+                <th>高濃度フルボ酸コスメパーマ</th>
+                <td>: ¥12,000</td>
+              </tr>
+              <tr>
+                <th>高濃度フルボ酸ポイントパーマ</th>
+                <td>: ¥8,000</td>
+              </tr>
+              <tr>
+                <th>ニュアンスストレート</th>
+                <td>: ¥12,800</td>
+              </tr>
+            </table>
+          </div>
+          <div class="straighting box">
+            <h3>
+              <span>
+                <img  class="icon" src="./images/icon_menu/icon_straighting.svg" alt="straighting">
+              </span>
+              straighting
+            </h3>
+            <table>
+              <tr>
+                <th>高濃度フルボ酸入り縮毛矯正</th>
+              <td>: ¥12,000</td>
+            </tr>
+            <tr>
+              <th>高濃度フルボ酸入りポイント矯正</th>
+              <td>: ¥4,250~</td>
+            </tr>
+          </table>
+        </div>
+        <div class="other box">
+          <h3>
+            <span>
+              <img  class="icon" src="./images/icon_menu/icon_other.svg" alt="other">
+            </span>
+            other
+          </h3>
+          <table>
+            <tr>
+              <th>シャンプー&ブロー</th>
+              <td>: ¥2,700</td>
+            </tr>
+            <tr>
+              <th>完熟トリートメントヘッドスパ　</th>
+              <td>: ¥3,800</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="menu-note">
+        <h2>～高濃度フルボ酸とは？～</h2>
+        <p>
+          フルボ酸とは土壌の中に存在する有機酸の１つで、自然界の中では植物にミネラルを補給する機能があります。人に対しては、美容や健康に対して効果があると期待されている成分です。Salon de beauteでは美容成分であるフルボ酸を高濃度で配合した製品を使用しています。
+        </p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+    </section>
+    <section class="pay">
+      <div class="pay-wrapper">
+        <h2>credit card</h2>
+        <p>カードでもお支払いいただけます</p>
+        <ul>
+          <li><i class="fab fa-cc-visa"></i></li>
+          <li><i class="fab fa-cc-mastercard"></i></li>
+          <li><i class="fab fa-cc-jcb"></i></li>
+          <li><i class="fab fa-cc-amex"></i></li>
+        </ul>
+      </div>
+    </section>
+  </article>
+  <div class="bg-3"></div>
+  <article>
+    <section id="reserve">
+      <div class="reserve-area">
+        <div class="reserve-wrapper">
+          <div class="reserve-title">
+            <h1>Reserve</h1>
+          </div>
+          <div class="reserve-text">
+            <p>
+              ご予約はお電話またはhotpepper beaautyから承っております
+            </p>
+            <span>
+              <i class="fas fa-phone-square"></i>
+              03-0000-0000
+            </span>
+          </div>
+        </div>
+        <div class="opening-hours">
+          <div class="open">
+            <h3>open</h3>
+            <table>
+              <tr>
+                <th>水・木・金 10:00~22:00</th>
+                <td>【最終受付：パーマ・カラー　18:00/　カット　19：00】</td>
+              </tr>
+              <tr>
+                <th>土・日・月　10：00～20:00</th>
+                <td>【最終受付：パーマ・カラー　18:00/カット　19:00】</td>
+              </tr>
+            </table>
+          </div>
+          <div class="close">
+            <h3>close</h3>
+            <table>
+              <tr>
+                <th>月曜日・不定休</th>
+                <td>【不定休についてはblogでお知らせします】</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="reserve-btn">
+          <div class="hotpepper">
+              <a class="hotpepper-btn" href="#">hotpepper beautyはこちら</a>
+          </div>
+          <div class="blog">
+              <a href="#" class="blog-btn">blogはこちら</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section id="access">
+      <div class="access-area">
+        <div class="access-wrapper">
+          <div class="access-title">
+            <h1>Access</h1>
+          </div>
+          <div class="access-text">
+            <h2>salon de beaute</h2>
+            <ul>
+              <li>Tell 03-6657-9305</li>
+              <li>Adrress　〒120-0000　東京都葛飾区○○　X-X-X　○○ビル1F</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103611.75653162303!2d139.853474!3d35.754064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f7e104957ed%3A0x1dde17d268dda727!2z5p2x5Lqs6YO96JGb6aO-5Yy6!5e0!3m2!1sja!2sjp!4v1589796087730!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <div class="footer">
+    <div class="footer-wrapper">
+      <nav class="footer-nav">
+        <ul class="foot-nav">
+          <li><a href="#">about</a></li>
+          <li><a href="#">style</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">reserve</a></li>
+          <li><a href="#">access</a></li>
+        </ul>
+      </nav>
+      <div class="copy">
+        <p>🄫salon de beaute all rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+	spaceBetween: 10,
+	slidesPerView: 3,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+  },
+  autoplay: {
+    delay: 4000,
+    stopOnLastSlide: false,
+  }
+});
+</script>
+<script>
+  objectFitImages('img.object-fit-img');
+</script>
+</body>
+</html>
